@@ -1,3 +1,4 @@
+#import the neccesary libraries
 import psycopg2
 import pandas as pd
 
@@ -32,7 +33,7 @@ def insert_to_database(cur,df,conn):
         EXCLUDED.taker,EXCLUDED.thumbnailUrl,EXCLUDED.timestamp,EXCLUDED.tokenId,\
     EXCLUDED.tx,EXCLUDED.txIndex)
     """
-    for i, row in df.iterrows():
+    for _, row in df.iterrows():
         cur.execute(insert_trades, row.values.tolist())
         conn.commit()
 
