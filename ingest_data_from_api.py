@@ -84,6 +84,7 @@ def pull_data_api(client,tr):
         print (tr.shape)
         tr.to_csv(str(before)+'.csv')
         trs.append(tr)
+        
     
     
 if __name__ == '__main__':
