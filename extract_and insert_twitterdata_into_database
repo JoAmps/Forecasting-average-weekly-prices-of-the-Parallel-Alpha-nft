@@ -12,7 +12,7 @@ def connect(Db_host,Db_name,Db_user,Db_pass):
 
 def obtain_data():
     tweets_list = []
-    for i,tweet in enumerate(sntwitter.TwitterSearchScraper("Parallel Alpha since:2021-08-09 until:2022-08-09").get_items()):
+    for i,tweet in enumerate(sntwitter.TwitterSearchScraper("Parallel Alpha since:2021-08-01 until:2022-08-09").get_items()):
         if i>1000:
             break
         tweets_list.append([tweet.date, tweet.id, tweet.content, tweet.username,tweet.retweetCount,tweet.likeCount,tweet.quotedTweet])
