@@ -1,0 +1,13 @@
+gql
+glob
+snscrape
+psycopg2
+seaborn
+matplotlib
+sklearn
+xgboost
+plotly
+shap
+textstat
+nltk
+fbprophet
