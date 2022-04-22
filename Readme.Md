@@ -57,8 +57,9 @@ The ability to forecast the prices of any commodity is crucial for companies, tr
 
 ## Results
 
-
-![Confusion Matrix](https://github.com/JoAmps/Churn-prediction-in-a-vehicle-insurance-company-in-Ghana/blob/main/confusion_matrix.png)
+![Correlations](https://github.com/JoAmps/Forecasting-average-prices-of-the-Parallel-Alpha-nft/blob/main/Correlations.png)
+![Forecasted price](https://github.com/JoAmps/Forecasting-average-prices-of-the-Parallel-Alpha-nft/blob/main/forecasted_price.png)
+![MAE](https://github.com/JoAmps/Forecasting-average-prices-of-the-Parallel-Alpha-nft/blob/main/mae.png)
 
 #### From the original dataset of customers which comprised of 8800 customers, after several experimentation, using different models, the xgboost model performed the best, with a recall of 95.9% and precision of 97.7%
 #### 15 false positives, which indicates 15 customers who actually churned, were predicted as not churned, and 6 false negatives, which means 6 customers did not churn, and they were predicted as churned was obtained
