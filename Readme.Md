@@ -23,6 +23,7 @@ The ability to forecast the prices of any commodity is crucial for companies, tr
 
 ### Technologies
 * PostgreSQL
+* Parsec and Twitter APIs
 * Python
 * Various python libraries for data science and machine learning
 * NLTK
