@@ -49,10 +49,10 @@ The ability to forecast the prices of any commodity is crucial for companies, tr
 ## Getting Started and to use this:
 
 1. Clone this repo (for help see this [tutorial](https://help.github.com/articles/cloning-a-repository/)).
-2. Run [ingest_nft_data_from_api.py] using you own parsec credentials to ingest data from the api
-3. Run [insert_nftdata_into_database.py] using you own postgresql credentials to insert the ingested parsec data into the database
+2. Run [ingest_nft_data_from_api.py] using your own parsec credentials to ingest data from the api
+3. Run [insert_nftdata_into_database.py] using your own postgresql credentials to insert the ingested parsec data into the database
 4. Run [extract_and insert_twitterdata_into_database] to extract twitter data using the time range of your choice, and it inserts the twitter data into a postgresql database, using your own postresql credentials
-5. Run the notebook, which performs every step of the process and stores the results into a csv file and saves it on your local drive
+5. Run the notebook, which performs every step of the process and stores the results into a csv file and saves it on your local drive, ready to be deployed to power bi
 
 
 ## Results
