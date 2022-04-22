@@ -25,7 +25,6 @@ The ability to forecast the prices of any commodity is crucial for companies, tr
 * PostgreSQL
 * Python
 * Various python libraries for data science and machine learning
-* Tensorflow
 * NLTK
 * Visual studio code, jupyter
 * Git
@@ -47,29 +46,17 @@ The ability to forecast the prices of any commodity is crucial for companies, tr
 #### How to integrate the Twitter data with the financial data
 
 
-## Getting Started
+## Getting Started and to use this:
 
 1. Clone this repo (for help see this [tutorial](https://help.github.com/articles/cloning-a-repository/)).
-2. Raw Data is being kept [datasets]
-3. Vehicle insurance churn.ipynb contains the visualizations and experiments used for this
-4. Data processing/transformation scripts are being kept [functions/data_preprocess.py]
-5. Testing script is here [test_model.py]
-6. Script for training is here [train.py]
-7. Script for monitoring the model and data is here [monitoring.py]
-8. Heroku scripts are here [Procfile,Aptfile,app.py]
-5. Output contains the output of the code such as model metrics, log files, model
-
-## To use this
-1. Run python requirements -r.txt to install the neccesary python libraries
-2. Run clean_data.py to run basic cleaning and obtain the datasets
-3. Run train.py which runs the training and evaluation script to train the model and score the performance
-4. Run test_model.py to run tests on various functions to ensure all parts function well
-5. Push code to your own repo to trigger CI/CD
-6. To perform inference, go to https://vehicle-company-churn.herokuapp.com/docs
-
+2. Run [ingest_nft_data_from_api.py] using you own parsec credentials to ingest data from the api
+3. Run [insert_nftdata_into_database.py] using you own postgresql credentials to insert the ingested parsec data into the database
+4. Run [extract_and insert_twitterdata_into_database] to extract twitter data using the time range of your choice, and it inserts the twitter data into a postgresql database, using your own postresql credentials
+5. Run the notebook, which performs every step of the process and stores the results into a csv file and saves it on your local drive
 
 
 ## Results
+
 
 ![Confusion Matrix](https://github.com/JoAmps/Churn-prediction-in-a-vehicle-insurance-company-in-Ghana/blob/main/confusion_matrix.png)
 
