@@ -1,9 +1,9 @@
-# Forecasting-average-NFT-prices-of-the-Parallel-Alpha-nft
+# Forecasting-average-weekly-NFT-prices-of-the-Parallel-Alpha-nft
 
 ![Parallel Alpha](https://github.com/JoAmps/Forecasting-average-prices-of-the-Parallel-Alpha-nft/blob/main/parallel%20alpha.jpeg)
 
 # Project Name
-Parallel Alpha NFT price forecasting
+Parallel Alpha NFT price forecasting weekly
 
 ## Project Intro/Objective
 The ability to forecast the prices of any commodity is crucial for companies, traders, and individuals, to know the price of their commodity in the future, so they make better plans using this knowledge. NFTs are the new craze that everyone is jumping on,theres potential money in it, and the ability to forecast their prices, to know if an NFT's price would grow or decline in the future, is very important, so people can make decisions to make profits on them.
