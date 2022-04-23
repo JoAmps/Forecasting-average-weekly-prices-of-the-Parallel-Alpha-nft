@@ -69,11 +69,11 @@ The ability to forecast the prices of any commodity is crucial for companies, tr
 #### More false positives suggests that there are more customers who churned, that the model did not pick up, in such a case, if the number is high, the company would have to spend money and resources on those customers to get them to not churn, for example more personalized advertissment, more incentives and discounts
 #### More false negatives suggests that there are more customers who did not churn, but the model predicted them to churn, in this situation, if this number is high, the company woud be spending time and resources on the wrong customers
 
-![Roc_auc](https://github.com/JoAmps/Churn-prediction-in-a-vehicle-insurance-company-in-Ghana/blob/main/roc_auc_curve.png)
+
 #### So there is this tradeoff in what is important to the company, which situation they deem most profitable to pursue, using that knowledge, we adjust the threshold to take care of that
 #### I used a threshold of 0.59, to reduce the false positives to 9, and increase the false negatives to 10, but this decision is based on the company needs and wants
 
-![Feature importances](https://github.com/JoAmps/Churn-prediction-in-a-vehicle-insurance-company-in-Ghana/blob/main/feature_importance.png)
+
 
 ## Monitoring
 I created a monitoring script, which detects if new data is available(more customers), and if new data is available, performs inference on the data and compares the new recall score to the previous score, if the new score is equal or higher than the previous, it suggests that model drift has not occurred, and if the score is lower, it is a possible indication that model drift has occurred, and further investigation is required, such as model retraining and the likes
