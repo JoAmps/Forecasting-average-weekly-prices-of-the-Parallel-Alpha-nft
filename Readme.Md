@@ -50,31 +50,30 @@ The ability to forecast the prices of any commodity is crucial for companies, tr
 ## Getting Started and to use this:
 
 1. Clone this repo (for help see this [tutorial](https://help.github.com/articles/cloning-a-repository/)).
-2. Run [ingest_nft_data_from_api.py] using your own parsec credentials to ingest data from the api
-3. Run [insert_nftdata_into_database.py] using your own postgresql credentials to insert the ingested parsec data into the database
-4. Run [ingest_and_insert_twitter_into_database.py] to extract twitter data using the time range of your choice, and it inserts the twitter data into a postgresql database, using your own postresql credentials
-5. Run the notebook, which performs every step of the process and stores the results into a csv file and saves it on your local drive, ready to be deployed to power bi
+2. Run [ingest_nft_data_from_api.py] using your own parsec credentials to ingest data from the API
+3. Run [insert_nftdata_into_database.py] using your own PostgreSQL credentials to insert the ingested parsec data into the database
+4. Run [ingest_and_insert_twitter_into_database.py] to extract Twitter data using the time range of your choice, and it inserts the Twitter data into a PostgreSQL database, using your own PostgreSQL credentials
+5. Run the notebook, which performs every step of the process and stores the results into a CSV file, and saves it on your local drive, ready to be deployed to power bi
 
 
 ## Results
 
 
-#### The data was aggregated to weekly, so the average prices of the nft in that week was used.Three models were used for the forecasting, prophet, arima and random forest. They all forecast one week ahead price. 
-#### The data from twitter was also aggregated weekly, and was joined to the financial data, these are the correlations among all the features. Remeber the target is mean_price. There is quite a good correlation among the features and the target, especially the twitter features.
+#### The data were aggregated weekly, so the average prices of the nft in that week were used. Three models were used for the forecasting, prophet, Arima, and random forest. They all forecast one week ahead of price. 
+#### The data from Twitter was also aggregated weekly, and was joined to the financial data, these are the correlations among all the features. Remember the target is mean_price. There is quite a good correlation between the features and the target, especially the Twitter features.
 
 
 ![Correlations](https://github.com/JoAmps/Forecasting-average-prices-of-the-Parallel-Alpha-nft/blob/main/Correlations.png)
 
-Arima is a univariate algorithm, which means it only takes in to account one feature and the date, so it didnt take into account the twitter data and the other financial data, Prophet and Random forest are multivariate algorithms, they take in account more thna feature, so all teh features were fed to these algorithms, these are the mean absolute errors(mae) of the 3 algorithms. Prophet had the lowest mae, and arima had the highest, remember, the smaller the mae, the better, so the prophet model was the best model in this case.
+Arima is a univariate algorithm, which means it only takes into account one feature and the date, so it didn't take into account the Twitter data and the other financial data, Prophet and Random forest are multivariate algorithms, they take into account more than one feature, so all the features were fed to these algorithms, these are the mean absolute errors(MAE) of the 3 algorithms. Prophet had the lowest mae, and Arima had the highest, remember, the smaller the mae, the better, so the prophet model was the best model in this case.
 ![MAE](https://github.com/JoAmps/Forecasting-average-prices-of-the-Parallel-Alpha-nft/blob/main/mae.png)
 
-As already mentioned, the models forecasted one week ahead, and these are the prices they expect the parallel alpha would cost on average in the next week. Though all the models have different prices of what the parallel alpha nft could be in the next week ,they all predict a growth in the price.
+As already mentioned, the models forecasted one week ahead, and these are the prices they expect the parallel alpha would cost on average in the next week. Though all the models have different prices of what the parallel alpha nft could be in the next week, they all predict a growth in the price.
 
 
 ![Forecasted price](https://github.com/JoAmps/Forecasting-average-prices-of-the-Parallel-Alpha-nft/blob/main/forecasted_price.png)
 
 ## Conclusion
-All the models had low mae which means they do well to forecast the price, but since the arima model didnt consider any of the features aside the date and the price, the focus is on the prophet and teh random forest, which achieved better results anyway.  The prophet had the best results to forecast the price with the lowest mae, and it forecasts the price of the NFT to be 0.62.  As mentioned, all the models predicts there to be a growth in the prices in the following week, which suggests, this is an nft to pay attention to.
+All the models had low mae which means they do well to forecast the price, but since the Arima model didn't consider any of the features aside from the date and the price, the focus is on the prophet and the random forest, which achieved better results anyway.  The prophet had the best results to forecast the price with the lowest mae, and it forecasts the price of the NFT to be 0.62.  As mentioned, all the models predict there to be a growth in the prices in the following week, which suggests, this is an nft to pay attention to.
 
 ## Deploying to PowerBI
-
