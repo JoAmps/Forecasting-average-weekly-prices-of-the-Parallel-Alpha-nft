@@ -69,11 +69,11 @@ Arima is a univariate algorithm, which means it only takes into account one feat
 ![MAE](https://github.com/JoAmps/Forecasting-average-prices-of-the-Parallel-Alpha-nft/blob/main/mae.png)
 
 As already mentioned, the models forecasted one week ahead, and these are the prices they expect the parallel alpha would cost on average in the next week. Though all the models have different prices of what the parallel alpha nft could be in the next week, they all predict a growth in the price.
+Remember, a negative value on the growth of a price means a decline, and a positive means a growth
 
-
-![Forecasted price](https://github.com/JoAmps/Forecasting-average-prices-of-the-Parallel-Alpha-nft/blob/main/forecasted_price.png)
+![Forecasted price](https://github.com/JoAmps/Forecasting-average-weekly-prices-of-the-Parallel-Alpha-nft/blob/main/Growth%20of%20price.png)
 
 ## Conclusion
-All the models had low mae which means they do well to forecast the price, but since the Arima model didn't consider any of the features aside from the date and the price, the focus is on the prophet and the random forest, which achieved better results anyway.  The prophet had the best results to forecast the price with the lowest mae, and it forecasts the price of the NFT to be 0.62.  As mentioned, all the models predict there to be a growth in the prices in the following week, which suggests, this is an nft to pay attention to.
+All the models had low mae which means they do well to forecast the price, but since the Arima model didn't consider any of the features aside from the date and the price, the focus is on the prophet and the random forest, which achieved better results anyway.  The prophet had the best results to forecast the price with the lowest mae, and it forecasts the price of the NFT to be 0.62, which is a growth of 0.05 from the previous week.  As mentioned, all the models predict there to be a growth in the prices in the following week, which suggests, this is an nft to pay attention to.
 
 ## Deploying to PowerBI
