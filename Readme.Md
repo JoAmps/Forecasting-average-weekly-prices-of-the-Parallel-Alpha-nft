@@ -68,7 +68,7 @@ The ability to forecast the prices of any commodity is crucial for companies, tr
 Arima is a univariate algorithm, which means it only takes into account one feature and the date, so it didn't take into account the Twitter data and the other financial data, Prophet and Random forest are multivariate algorithms, they take into account more than one feature, so all the features were fed to these algorithms, these are the mean absolute errors(MAE) of the 3 algorithms. Prophet had the lowest mae, and Arima had the highest, remember, the smaller the mae, the better, so the prophet model was the best model in this case.
 ![MAE](https://github.com/JoAmps/Forecasting-average-prices-of-the-Parallel-Alpha-nft/blob/main/mae.png)
 
-As already mentioned, the models forecasted one week ahead, and these are the prices they expect the parallel alpha would cost on average in the next week. Though all the models have different prices of what the parallel alpha nft could be in the next week, they all predict a growth in the price.
+As already mentioned, the models forecasted one week ahead, and these are the growth of the prices the model predicts, that is, the growth of price from the current week to the next week on average. Though all the models have different prices of what the parallel alpha nft could be in the next week, they all predict a growth in the price.
 Remember, a negative value on the growth of a price means a decline, and a positive means a growth
 
 ![Forecasted price](https://github.com/JoAmps/Forecasting-average-weekly-prices-of-the-Parallel-Alpha-nft/blob/main/Growth%20of%20price.png)
@@ -80,3 +80,12 @@ All the models had low mae which means they do well to forecast the price, but s
 Below is a screenshot of the Dashboard developed in Tableau, in which the output of the model and analysis is deployed onto
 ![Dashboard1](https://github.com/JoAmps/Forecasting-average-weekly-prices-of-the-Parallel-Alpha-nft/blob/main/Dashboard%201.png)
 Its a very simple UI that non technical people can view and understand what is happening, the trend of the average prices of the nft weekly since last year august, and the forecast for the next week. The mean absolute error is displayed there, which can simply in lay man terms be explained as the amount of error between what our model preidicted, and what the prices actually were. It can clearly be seen that there was a growth in price, which is also written down there. Only the best performing model's(prophet) results is displayed.
+The interactive dashboard can be found here --> https://public.tableau.com/app/profile/hyacinth.ampadu5719/viz/ForecastingPriceofParallelAlphaNFT/Dashboard1?publish=yes
+
+## Updating
+To get forecast for the following week in every week, the code has to be run in this process:
+#### Run ingest_nft_data_from_api.py to ingest the latest data from the parsec api
+#### Run insert_nftdata_into_database.py to insert the ingested parsec data into the postgresql database(using your credentials)
+#### Run ingest_and_insert_twitter_into_database.py to ingest latest twitter data and insert into the postgresql database
+#### Run the notebook forecasting weekly floor prices of parallel alpha.ipynb, that analyzes all the data, performs feature engineering, statistical testing and trains and evaluates the models and outputs it into a dataframe
+#### After, take the outputted data and update the Tableau dashboard
