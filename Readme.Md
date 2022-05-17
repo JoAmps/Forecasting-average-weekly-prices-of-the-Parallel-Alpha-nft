@@ -29,10 +29,10 @@ The ability to forecast the prices of any commodity is crucial for companies, tr
 * NLTK
 * Visual studio code, jupyter
 * Git
-* PowerBI
+* Tableau
 
 ## Project Description
-#### Parallel Alpha NFT is one of the most popular NFTs, often in the top 10 rankings by popular websites. It has been traded over 65,000 times, meaning it's a very popular NFT that people have interests in. It is verified on the open sea(the world's largest nft marketplace) and has a huge community. Due to its popularity and high demand, knowing a lot about this nft, and being able to determine the future price of this NFT is likely to be a very profitable venture for all. All the financial details of this NFT, alongside tweets about this NFT, were obtained and used for this project. The analysis was done weekly, and the forecast was done two weeks ahead, meaning the following two weeks prices of this NFT were forecasted, to know if the NFT price would grow or decline, leading to a decision of whether to buy or sell. The results were outputted into a dashboard using Power BI, for all to see and understand.
+#### Parallel Alpha NFT is one of the most popular NFTs, often in the top 10 rankings by popular websites. It has been traded over 65,000 times, meaning it's a very popular NFT that people have interests in. It is verified on the open sea(the world's largest nft marketplace) and has a huge community. Due to its popularity and high demand, knowing a lot about this nft, and being able to determine the future price of this NFT is likely to be a very profitable venture for all. All the financial details of this NFT, alongside tweets about this NFT, were obtained and used for this project. The analysis was done weekly, and the forecast was done two weeks ahead, meaning the following two weeks prices of this NFT were forecasted, to know if the NFT price would grow or decline, leading to a decision of whether to buy or sell. The results were outputted into a dashboard using Tableau, for all to see and understand.
 
 
 ### The questions I deemed to explore were:
@@ -53,7 +53,7 @@ The ability to forecast the prices of any commodity is crucial for companies, tr
 2. Run [ingest_nft_data_from_api.py] using your own parsec credentials to ingest data from the API
 3. Run [insert_nftdata_into_database.py] using your own PostgreSQL credentials to insert the ingested parsec data into the database
 4. Run [ingest_and_insert_twitter_into_database.py] to extract Twitter data using the time range of your choice, and it inserts the Twitter data into a PostgreSQL database, using your own PostgreSQL credentials
-5. Run the notebook, which performs every step of the process and stores the results into a CSV file, and saves it on your local drive, ready to be deployed to power bi
+5. Run the notebook, which performs every step of the process and stores the results into a CSV file, and saves it on your local drive, ready to be deployed to Tableau
 
 
 ## Results
