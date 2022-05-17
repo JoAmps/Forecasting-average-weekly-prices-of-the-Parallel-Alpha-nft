@@ -73,9 +73,10 @@ Remember, a negative value on the growth of a price means a decline, and a posit
 
 ![Forecasted price](https://github.com/JoAmps/Forecasting-average-weekly-prices-of-the-Parallel-Alpha-nft/blob/main/Growth%20of%20price.png)
 
-## Conclusion
+## Summary
 All the models had low mae which means they do well to forecast the price, but since the Arima model didn't consider any of the features aside from the date and the price, the focus is on the prophet and the random forest, which achieved better results anyway.  The prophet had the best results to forecast the price with the lowest mae, and it forecasts the price of the NFT to be 0.62, which is a growth of 0.05 from the previous week.  As mentioned, all the models predict there to be a growth in the prices in the following week, which suggests, this is an nft to pay attention to.
 
-## Deploying to PowerBI
+## Deploying to Tableau
 Below is a screenshot of the Dashboard developed in Tableau, in which the output of the model and analysis is deployed onto
 ![Dashboard1](https://github.com/JoAmps/Forecasting-average-weekly-prices-of-the-Parallel-Alpha-nft/blob/main/Dashboard%201.png)
+Its a very simple UI that non technical people can view and understand what is happening, the trend of the average prices of the nft weekly since last year august, and the forecast for the next week. The mean absolute error is displayed there, which can simply in lay man terms be explained as the amount of error between what our model preidicted, and what the prices actually were. It can clearly be seen that there was a growth in price, which is also written down there. Only the best performing model's(prophet) results is displayed.
