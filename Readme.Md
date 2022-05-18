@@ -89,3 +89,6 @@ To get forecast for the following week in every week, the code has to be run in 
 #### Run ingest_and_insert_twitter_into_database.py to ingest latest twitter data and insert into the postgresql database
 #### Run the notebook forecasting weekly floor prices of parallel alpha.ipynb, that analyzes all the data, performs feature engineering, statistical testing and trains and evaluates the models and outputs it into a dataframe
 #### After, take the outputted data and update the Tableau dashboard
+
+## Conclusion
+Like cryptocurrency, NFTs have captured the minds of traders and individuals alike, to try and make money of them. The ability to know if a particular NFT would grow in price or reduce in price is very crucial, so people know if to buy or sell this NFT. This project is a step in the right direction to help individuals and traders to know if the parallel alpha NFT is an NFT to be bought or sold weekly, in order to generate some profits for them
